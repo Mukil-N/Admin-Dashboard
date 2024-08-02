@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #ccc;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+        "sidebar header header"
+        "sidebar main right-panel";
+        grid-template-rows: auto 1fr;
+}
+.header {
+    grid-area:header;
+    background-color: white;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 50px;
+    
+}
+.top {
+    display: flex;  
+}
+.bottom {
+    display: flex;  
+}
+input{
+    background-color: #d2d2d2dd;
+    border: none;
+    width: 400px;
+    height: 25px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+label {
+    margin-left: 80px;
+}
+.welcome {
+    display: flex;
+    margin-left: 80px;
+    gap: 20px;
+    position: relative;
+    bottom: 28px;
+}
+.greeting {
+    margin-top: 20px;
+}
+.head-top{
+    display: flex;
+    gap: 40px;
+    margin-left: 300px;
+}
+.bell {
+    margin-top: 20px;
+}
+.d-name {
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: 600;
+}
+.action-btn {
+    margin-left: 375px;
+}
+.btn-upload {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+button {
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(9, 9, 9);
+    color: #FFFFFF;
+    transition: transform 0.3s ease;
+}
+button:hover {
+    background-color: rgb(132, 123, 123);
+    transform: scale(1.1);
+}
+.search {
+    margin-top: 25px;
+}
+.round1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.round2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.small {
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.blurb{
+    font-size: x-large;
+    font-weight: 800;
+}
+.sidebar {
+    background-color: rgb(9, 9, 9);
+    grid-area: sidebar;
+    color: white;
+    
+}
+.sidebar-head{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-size: xx-large;
+    transition: transform 0.3s ease;
+}
+.sidebar-head:hover{
+    transform: scale(1.1);
+}
+.head {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+.sidebar-main {
+    position: relative;
+    left: 60px;
+    font-size: larger;
+    transition: transform 0.3s ease;
+}
+.sidebar-main:hover{
+    transform: scale(1.1);
+}
+#home,#profile,#message,#history,#task,#community,#setting,#support,#privacy{
+    position: relative;
+    top: 5px;
+    right: 15px;
+    
+}
+.main {
+    grid-area: main;
+    background-color: white;
+    padding: 20px;
+    
+}
+.caption{
+    margin: 10px 10px 20px 10px;
+    padding: 10px;
+}
+.main-content {
+    display: grid;
+    grid: 1fr 1fr 1fr/1fr 1fr;
+    gap: 25px;
+}
+.right-panel {
+    grid-area: right-panel;
+    background-color: white;
+}
+.card {
+    padding: 20px;
+    background-color: white;
+    border-left: 10px solid black;
+   
+}
+.content {
+    text-align: justify;
+}
+.title {
+    font-size: large;
+    font-weight: 700;
+}
+.right1 {
+    margin-right: 15px;
+    background-color: rgb(240, 237, 237);
+    padding: 30px;
+    border-radius: 20px;
+}
+p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.note {
+    text-align: justify;
+    word-wrap: break-word;
+}
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.round3 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.trending {
+    display: flex;
+}
+span {
+    position: relative;
+    left: 20px;
+}
+.right2 {
+    background-color: rgb(240, 237, 237);
+    padding: 30px;
+    border-radius: 20px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-top: 5px;
+    position: relative;
+    top: 10px;
+}
